@@ -8,7 +8,8 @@ Level Designs<br>
 ![2](https://user-images.githubusercontent.com/30179397/65367851-072fd300-dc06-11e9-8d7b-2dab3ac9fcc1.PNG)
 
 ## How to Play
-To run the game, download One_Stroke.exe from this repository, and run it. Enjoy! :)
+To run the game, simply download `One_Stroke.exe` from this repository, and run it. Enjoy! :)
+
 
 ## FAQ
 1. Q: Can I visit on a vertex more than once? 
