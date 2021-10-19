@@ -1,5 +1,5 @@
 !1514;s
-J
+A
 SAU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
 SCU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
 S+U0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
@@ -12,10 +12,10 @@ s#i0
 s#k0
 s#j0
 s#l0
-!99;u
-a0	b6	c255	f%\011One_Stroke.jar	g%\011One Stroke.zip	hManifest-Version\0111.0\011Main-Class\011Main!33;g
-%\011Buttons.java
-%\011Main.java
-!33;f
-%\011Buttons.java
-%\011Main.java
+!78;u
+a0	b70	c255	f%\011One_Stroke.jar	g%\011One_Stroke.zip	hManifest-Version\0111.0!25;g
+%\011src%s
+%\011images%s
+!25;f
+%\011src%s
+%\011images%s
