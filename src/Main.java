@@ -1,15 +1,14 @@
+package src;
+import src.Buttons;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.geom.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import java.awt.MouseInfo;
-import java.applet.*;
+
 import java.util.ArrayList;
 ///
  /*********************************************************
@@ -372,51 +371,58 @@ public class Main extends JFrame{
       }
    }
    
+   public Image returnImage (String name)
+   {
+      String path = "/images/" + name;
+      return Toolkit.getDefaultToolkit().createImage(this.getClass().getResource(path));
+
+   }
+   
    public Main(){
-      vertexx = Toolkit.getDefaultToolkit().createImage("pixil-frame-0 (2).png");
-      vertexMove = Toolkit.getDefaultToolkit().createImage("pixil-gif-drawing (1).gif");
-      vertexClicked = Toolkit.getDefaultToolkit().createImage("pixil-frame-0.jpg");
-      pause = Toolkit.getDefaultToolkit().createImage("pause.jpg");
-      selectLevel = Toolkit.getDefaultToolkit().createImage("levelSelect.jpg");            //jump
-      redo = Toolkit.getDefaultToolkit().createImage("redo.png");
-      redoPressed = Toolkit.getDefaultToolkit().createImage("redoPressed.png");
-      one = Toolkit.getDefaultToolkit().createImage("one.png");
-      stroke = Toolkit.getDefaultToolkit().createImage("stroke.png");
-      play = Toolkit.getDefaultToolkit().createImage("play.png");
+      vertexx = this.returnImage("pixil-frame-0 (2).png");
+      vertexMove = this.returnImage("pixil-gif-drawing (1).gif");
+      vertexClicked = this.returnImage("pixil-frame-0.jpg");
+      pause = this.returnImage("pause.jpg");
+      selectLevel = this.returnImage("levelSelect.jpg");            //jump
+      redo = this.returnImage("redo.png");
+      redoPressed = this.returnImage("redoPressed.png");
+      one = this.returnImage("one.png");
+      stroke = this.returnImage("stroke.png");
+      play = this.returnImage("play.png");
       play = play.getScaledInstance(200, 128, Image.SCALE_DEFAULT);
-      doge = Toolkit.getDefaultToolkit().createImage("doge.png");
+      doge = this.returnImage("doge.png");
       doge = doge.getScaledInstance(220, 192, Image.SCALE_DEFAULT);
-      cat = Toolkit.getDefaultToolkit().createImage("cat.png");
+      cat = this.returnImage("cat.png");
       cat = cat.getScaledInstance(165,150,Image.SCALE_DEFAULT);
-      turtle = Toolkit.getDefaultToolkit().createImage("turtle.png");
+      turtle = this.returnImage("turtle.png");
       turtle = turtle.getScaledInstance(105, 120, Image.SCALE_DEFAULT);
-      finish = Toolkit.getDefaultToolkit().createImage("finish.png");
-      hint = Toolkit.getDefaultToolkit().createImage("hint.png");
+      finish = this.returnImage("finish.png");
+      hint = this.returnImage("hint.png");
       levelSelect2 = selectLevel.getScaledInstance(180, 100, Image.SCALE_DEFAULT);
-      arrow = Toolkit.getDefaultToolkit().createImage("arrow.png");
+      arrow = this.returnImage("arrow.png");
       arrow=arrow.getScaledInstance(45,30,Image.SCALE_DEFAULT);  //jump
-      rules = Toolkit.getDefaultToolkit().createImage("rules.png");
+      rules = this.returnImage("rules.png");
       rules = rules.getScaledInstance(70, 64, Image.SCALE_DEFAULT);
-      back = Toolkit.getDefaultToolkit().createImage("back.png");
+      back = this.returnImage("back.png");
       back = back.getScaledInstance(163, 63, Image.SCALE_DEFAULT);
-      yu = Toolkit.getDefaultToolkit().createImage("yu.png");
+      yu = this.returnImage("yu.png");
       yu = yu.getScaledInstance(200,90,Image.SCALE_DEFAULT);
-      pausePage = Toolkit.getDefaultToolkit().createImage("pausePage.png");
-      smile = Toolkit.getDefaultToolkit().createImage("smile.png");
+      pausePage = this.returnImage("pausePage.png");
+      smile = this.returnImage("smile.png");
       smile = smile.getScaledInstance(100, 100, Image.SCALE_DEFAULT);
-      create = Toolkit.getDefaultToolkit().createImage("create.png");
-      puzzle = Toolkit.getDefaultToolkit().createImage("puzzle.png");
-      design  = Toolkit.getDefaultToolkit().createImage("design.png");
-      rod = Toolkit.getDefaultToolkit().createImage("rod.png");
+      create = this.returnImage("create.png");
+      puzzle = this.returnImage("puzzle.png");
+      design  = this.returnImage("design.png");
+      rod = this.returnImage("rod.png");
       rod = rod.getScaledInstance(60,50,Image.SCALE_DEFAULT);
-      grid = Toolkit.getDefaultToolkit().createImage("grid.png");
+      grid = this.returnImage("grid.png");
       grid = grid.getScaledInstance(600,525,Image.SCALE_DEFAULT);
-      home = Toolkit.getDefaultToolkit().createImage("home.png");
-      arrow2 = Toolkit.getDefaultToolkit().createImage("arrow2.png");
+      home = this.returnImage("home.png");
+      arrow2 = this.returnImage("arrow2.png");
       arrow2 = arrow2.getScaledInstance(45, 30, Image.SCALE_DEFAULT);
-      win = Toolkit.getDefaultToolkit().createImage("Win.png");
-      pauseClicked = Toolkit.getDefaultToolkit().createImage("pressedpause.jpg");
-      miniFinish = Toolkit.getDefaultToolkit().createImage("miniFinish.png");
+      win = this.returnImage("Win.png");
+      pauseClicked = this.returnImage("pressedpause.jpg");
+      miniFinish = this.returnImage("miniFinish.png");
       
       //Set up JFrame
       JFrame frame = new JFrame("One Stroke");

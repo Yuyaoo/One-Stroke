@@ -1,3 +1,4 @@
+package src;
 public class Buttons {
    //x-the x coordinate of the button
    //y-the y coordinate of the button
